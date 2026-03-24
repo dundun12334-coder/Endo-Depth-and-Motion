@@ -13,6 +13,7 @@ __pycache__
 *.py.bak
 .pytest_cache/
 
-# Archives
-*.zip
+# Images
+*.png
+*.jpg
 
