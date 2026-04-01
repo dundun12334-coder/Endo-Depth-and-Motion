@@ -1,0 +1,6 @@
+pytorch3d 无预编译 wheel — Python 3.12 + PyTorch 2.x 太新，必须从源码编译（25分钟）
+旧版依赖不兼容 — pandas==1.0.3、kornia==0.5.11 在 Python 3.12 装不上，改装最新版
+最初没有 GPU — PyTorch CPU 版无法安装 pytorch3d，需切换到 T4 GPU
+tracking 脚本是 GUI 程序 — 依赖 Open3D 窗口和键盘交互，Colab 完全无法运行，改用预计算 odometry
+zip 文件干扰路径解析 — list_files 把 zip 也列进来，解压后必须删掉
+Plotly 在 Colab 不稳定 — 改成保存 HTML 下载到本地浏览器打开
